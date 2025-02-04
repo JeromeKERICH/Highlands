@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --forest-green: #2a9d8f;
+  --warm-gold: #f4a261;
+  --light-gray: #f1f1f1;
+  --dark-charcoal: #333333;
+}
+
+
+/* Body styles */
+body {
+  font-family: 'Arial', sans-serif; /* You can change this to your preferred font */
+  background-color: var(--light-gray);
+  color: var(--dark-charcoal);
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  color: var(--warm-gold);
+  font-size: 3rem;
+}
+
+h2 {
+  color: var(--forest-green);
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: var(--dark-charcoal);
+  font-size: 2rem;
+}
+
+h4 {
+  color: var(--dark-charcoal);
+  font-size: 1.5rem;
+}
+
+p {
+  color: var(--dark-charcoal);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+button {
+  background-color: var(--warm-gold);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+
+/* Links */
+a {
+  color: var(--forest-green);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--warm-gold);
+}
+
+/* Mobile-first approach for responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+}

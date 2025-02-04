@@ -1,0 +1,98 @@
+.cta-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #0e180b, #182e14); /* Gradient background */
+    color: white;
+    text-align: center;
+    height: 50vh;
+  }
+  
+  .cta-content {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .cta-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: goldenrod;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f8f8f8;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cta-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    background-color: #333;
+    color: white;
+    border: 1px solid #f8f8f8;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: cadetblue;
+  }
+  
+  .cta-btn.primary {
+    background-color: transparent;
+
+  }
+  
+  .cta-btn.secondary {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .cta-btn svg {
+    margin-left: 10px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+
+    .cta-section {
+        height: 60vh;
+    }
+    .cta-title {
+      font-size: 1.5rem;
+      text-align: start;
+    }
+  
+    .cta-description {
+      font-size: 1rem;
+      text-align: start;
+    }
+  
+    .cta-buttons {
+      flex-direction: column;
+    }
+  
+    .cta-btn {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .cta-section {
+        height: 100vh;
+    }
+  }
