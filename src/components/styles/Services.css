@@ -103,28 +103,29 @@
 
 /* Background Images */
 .service-card:nth-child(1) {
-    background-image: url('assets/confe.jpg');
+    background-image: url('/assets/confe.jpg');
 }
 
 .service-card:nth-child(2) {
-    background-image: url('assets/deco.jpg');
+    background-image: url('/assets/deco.jpg');
 }
 
 .service-card:nth-child(3) {
-    background-image: url('assets/catering.jpg');
+    background-image: url('/assets/catering.jpg');
 }
 
 .service-card:nth-child(4) {
-    background-image: url("assets/horse2.jpg") ;
+    background-image: url('/assets/horse2.jpg');
 }
 
 .service-card:nth-child(5) {
-    background-image: url("assets/tents.jpg") ;;
+    background-image: url('/assets/tents.jpg');
 }
 
 .service-card:nth-child(6) {
-    background-image: url("assets/pack.jpg") ;;
+    background-image: url('/assets/pack.jpg');
 }
+
 
 /* Mobile Responsiveness */
 

@@ -1,8 +1,13 @@
 
 import "./styles/AboutPage.css"; 
-import CTA from "../components/ui/Button";
+import { useEffect } from "react";
 
 function AboutPage() {
+
+    useEffect(() => {
+        // Reset scroll position on every route change
+        window.scrollTo(0, 0);
+      });
 
     const businesses = [
     {

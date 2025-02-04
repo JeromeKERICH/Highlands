@@ -6,7 +6,7 @@
   justify-content: center;
   height: 100vh;
   background: linear-gradient(to bottom, rgba(197, 191, 191, 0.74), rgba(17, 17, 17, 0.562)),
-    url("assets/wedd.jpg") center/cover no-repeat;
+    url("/assets/wedd.jpg") center/cover no-repeat;
   color: white;
   padding: 20px;
 }

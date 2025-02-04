@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCalendar, IoPeople, IoBusiness, IoClose } from "react-icons/io5";
 import "./styles/Hire.css";
 
 const Equipments = () => {
+
+  useEffect(() => {
+      // Reset scroll position on every route change
+      window.scrollTo(0, 0);
+    });
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({

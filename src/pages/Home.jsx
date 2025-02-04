@@ -7,6 +7,7 @@ import Testimonials from "../components/layouts/Testimonials";
 import CTA from "../components/ui/Button";
 
 const Home = () => {
+ 
   return (
     <div>
        <HeroSection/>

@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa';
 import '../components/styles/Contact.css';
 
 const ContactSection = () => {
+
+    useEffect(() => {
+        // Reset scroll position on every route change
+        window.scrollTo(0, 0);
+      });
   const [formData, setFormData] = useState({
     name: '',
     email: '',

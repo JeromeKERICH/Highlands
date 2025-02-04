@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoFastFood, IoRestaurant, IoWine, IoClose } from "react-icons/io5";
 import "./styles/Outdoor.css";
 
 const OutdoorCatering = () => {
+
+  useEffect(() => {
+      // Reset scroll position on every route change
+      window.scrollTo(0, 0);
+    });
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({

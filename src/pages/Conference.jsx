@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCalendar, IoPeople, IoBusiness, IoClose, IoImage } from "react-icons/io5";
 import "./styles/Conference.css";
 
 const ConferenceServices = () => {
+
+  useEffect(() => {
+      // Reset scroll position on every route change
+      window.scrollTo(0, 0);
+    });
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
