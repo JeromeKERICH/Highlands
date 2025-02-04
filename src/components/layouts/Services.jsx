@@ -1,4 +1,5 @@
 import { IoIosCheckboxOutline } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa'; // Import the forward arrow icon
 import "../styles/Services.css";
 
@@ -19,9 +20,9 @@ const ServicesSection = () => {
             </div>
             <h3 className="service-name">Conference Services</h3>
             <p className="service-description">Transform your professional gatherings into productive, inspiring experiences.</p>
-            <a href="/conferenceservices" className="learn-more-btn">
+            <Link to="/conferenceservices" className="learn-more-btn">
               Learn More <FaArrowRight />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -33,9 +34,9 @@ const ServicesSection = () => {
             </div>
             <h3 className="service-name">Event Management</h3>
             <p className="service-description">Whether it’s your dream wedding, a pre-wedding celebration, or a vibrant party, we handle it all seamlessly.</p>
-            <a href="/eventman" className="learn-more-btn">
+            <Link to="/eventman" className="learn-more-btn">
               Learn More <FaArrowRight />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -47,9 +48,9 @@ const ServicesSection = () => {
             </div>
             <h3 className="service-name">Outdoor Catering</h3>
             <p className="service-description">Take your events to the next level with culinary delights, prepared with love.</p>
-            <a href="/outdoorcatering" className="learn-more-btn">
-              Learn More <FaArrowRight />
-            </a>
+            <Link to="/outdoorcatering" className="learn-more-btn">
+                Learn More <FaArrowRight />
+            </Link>
           </div>
         </div>
 
@@ -63,9 +64,9 @@ const ServicesSection = () => {
             </div>
             <h3 className="service-name">Adventure Grounds</h3>
             <p className="service-description">Immerse yourself in nature and excitement with zip-lining, sky cycling, horse riding, and boat riding.</p>
-            <a href="/adventuregrounds" className="learn-more-btn">
+            <Link to="/adventuregrounds" className="learn-more-btn">
               Learn More <FaArrowRight />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -77,9 +78,9 @@ const ServicesSection = () => {
             </div>
             <h3 className="service-name">Tents & Utensils for Hire</h3>
             <p className="service-description">Everything you need to create a beautiful and organized setting.</p>
-            <a href="/equipments" className="learn-more-btn">
+            <Link to="/equipments" className="learn-more-btn">
               Learn More <FaArrowRight />
-            </a>
+            </Link>
           </div>
         </div>
 

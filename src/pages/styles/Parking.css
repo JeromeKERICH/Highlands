@@ -6,7 +6,7 @@
   
  
   .hero {
-    background-image: linear-gradient(rgba(43, 68, 45, 0.856), rgba(22, 21, 21, 0.897)), url("assets/park4.jpg");
+    background-image: linear-gradient(rgba(43, 68, 45, 0.856), rgba(22, 21, 21, 0.897)), url("/assets/park4.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
