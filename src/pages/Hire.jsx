@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoCalendar, IoPeople, IoBusiness, IoClose } from "react-icons/io5";
-import "./styles/Conference.css";
+import "./styles/Hire.css";
 
 const Equipments = () => {
   const [showModal, setShowModal] = useState(false);
@@ -51,9 +51,9 @@ const Equipments = () => {
       <section className="gallery">
         <h2>Secure Your Event Essentials Now</h2>
         <div className="gallery-grid">
-          <div className="gallery-item"><img src="assets/ten1.jpg" alt="Event 1" /></div>
-          <div className="gallery-item"><img src="assets/ten2.jpg" alt="Event 2" /></div>
-          <div className="gallery-item"><img src="assets/ten3.jpg" alt="Event 3" /></div>
+          <div className="gallery-item"><img src="assets/Eve1.jpg" alt="Event 1" /></div>
+          <div className="gallery-item"><img src="assets/Eve2.jpg" alt="Event 2" /></div>
+          <div className="gallery-item"><img src="assets/Eve3.jpg" alt="Event 3" /></div>
         </div>
       </section>
 

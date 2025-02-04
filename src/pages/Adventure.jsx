@@ -52,7 +52,7 @@ const AdventureGrounds = () => {
         <h2>Explore Our Adventure Grounds</h2>
         <div className="gallery-grid">
           <div className="gallery-item"><img src="assets/gro1.jpg" alt="Adventure 1" /></div>
-          <div className="gallery-item"><img src="assets/gro3.jpg" alt="Adventure 2" /></div>
+          <div className="gallery-item"><img src="assets/out3.jpg" alt="Adventure 2" /></div>
           <div className="gallery-item"><img src="assets/grow2.jpg" alt="Adventure 3" /></div>
         </div>
       </section>

@@ -51,9 +51,9 @@ const EventManagement = () => {
       <section className="gallery">
         <h2>Our Past Events</h2>
         <div className="gallery-grid">
-          <div className="gallery-item"><img src="assets/Eve1.jpg" alt="Event 1" /></div>
-          <div className="gallery-item"><img src="assets/Eve2.jpg" alt="Event 2" /></div>
-          <div className="gallery-item"><img src="assets/Eve4.jpg" alt="Event 3" /></div>
+          <div className="gallery-item"><img src="/assets/Eve1.jpg" alt="Event 1" /></div>
+          <div className="gallery-item"><img src="/assets/Eve2.jpg" alt="Event 2" /></div>
+          <div className="gallery-item"><img src="/assets/Eve3.jpg" alt="Event 3" /></div>
         </div>
       </section>
 

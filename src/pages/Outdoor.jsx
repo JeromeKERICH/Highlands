@@ -52,7 +52,7 @@ const OutdoorCatering = () => {
         <h2>See Our Culinary Creations</h2>
         <div className="gallery-grid">
           <div className="gallery-item"><img src="assets/out1.jpg" alt="Catering Event 1" /></div>
-          <div className="gallery-item"><img src="assets/out2.jpg" alt="Catering Event 2" /></div>
+          <div className="gallery-item"><img src="assets/Out4.jpg" alt="Catering Event 2" /></div>
           <div className="gallery-item"><img src="assets/out3.jpg" alt="Catering Event 3" /></div>
         </div>
       </section>

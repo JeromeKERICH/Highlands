@@ -1,0 +1,201 @@
+/* General Styles */
+.conference-container {
+    font-family: 'Poppins', sans-serif;
+
+  }
+  
+ 
+  .hero {
+    background-image: linear-gradient(rgba(43, 68, 45, 0.856), rgba(22, 21, 21, 0.897)), url("assets/out1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    max-width: 700px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  .btn {
+    
+    background: #ff7b00;
+    color: #f9f9f9;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+ 
+  
+  /* Features Section */
+  .features {
+    padding-top: 3%;
+    width: 100%;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .features h2 {
+    padding-bottom: 20px;
+    
+  }
+  
+  .feature-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    width: 280px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .feature-item .icon {
+    font-size: 3rem;
+    color: #ff7b00;
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Image Gallery */
+  .gallery {
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .gallery h2 {
+    margin-bottom: 20px;
+  }
+  
+  .gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.08);
+  }
+  
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    font-size: 1.5rem;
+  }
+  .close-icon {
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+  }
+  
+  .modal form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .modal form input,
+  .modal form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .modal-buttons {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .secondary {
+    
+    background: #ddd;
+    color: #222;
+  }
+
+ 
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+      text-align: start;
+    }
+
+    .hero-content p {
+      text-align: start;
+      font-size: 1rem;
+    }
+
+    .features {
+        padding-left: 4%;
+        padding-right: 4%;
+      }
+      .feature-item {
+        width: 100%;
+      }
+
+     
+  }
+  
