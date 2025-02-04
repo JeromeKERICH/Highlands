@@ -258,6 +258,9 @@
         color: #043a04;
       }
 
+      .about-mission-content h2 {
+        font-size: 1.3rem;
+      }
     .about-mission {
         display: contents;
     }
@@ -268,12 +271,20 @@
       grid-template-columns: 1fr;
     }
 
+
+    .service-item h3 {
+        font-size: 1.3rem;
+    }
     .other-businesses h2 {
         font-size: 1.5rem;
     }
   
     .business-list {
       grid-template-columns: 1fr;
+    }
+
+    .business-item h3 {
+        font-size: 1.2rem;
     }
   
     .founder-section h2 {

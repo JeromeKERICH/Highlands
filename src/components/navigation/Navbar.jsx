@@ -93,19 +93,20 @@ const Header = () => {
             Events
           </Link>
           <Link
-            to="/contactsection"
-            className="mobile-link"
-            onClick={closeMenu}
-          >
-            Contact
-          </Link>
-          <Link
             to="/aboutpage"
             className="mobile-link"
             onClick={closeMenu}
           >
             About
           </Link>
+          <Link
+            to="/contactsection"
+            className="mobile-link"
+            onClick={closeMenu}
+          >
+            Contact
+          </Link>
+          
         </div>
       </div>
     </header>

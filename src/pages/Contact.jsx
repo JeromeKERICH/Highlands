@@ -37,11 +37,11 @@ const ContactSection = () => {
           <p>We are happy to hear from you!</p>
           <div className="contact-item">
             <FaMapMarkerAlt className="contact-icon" />
-            <span>123 Highland Avenue, Cityville</span>
+            <span>Chebarbar Juction</span>
           </div>
           <div className="contact-item">
             <FaPhoneAlt className="contact-icon" />
-            <span>(+123) 456-7890</span>
+            <span>(+254) 718-786-098</span>
           </div>
           <div className="contact-item">
             <FaEnvelope className="contact-icon" />

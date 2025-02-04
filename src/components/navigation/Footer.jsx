@@ -30,10 +30,10 @@ const Footer = () => {
           <h3>Reach Out</h3>
           <ul>
             <li>
-              <span>123 Highland Avenue, Cityville</span>
+              <span>Chebarbar Juction</span>
             </li>
             <li>
-              <span>(+123) 456-7890</span>
+              <span>(+254) 718-786-098</span>
             </li>
             <li>
               <span>info@highlandstraining.com</span>

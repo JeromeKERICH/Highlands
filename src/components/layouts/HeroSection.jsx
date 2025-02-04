@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/HeroSection.css";
 
 const HeroSection = () => {
+
+  useEffect(() => {
+      // Reset scroll position on every route change
+      window.scrollTo(0, 0);
+    });
   const [showModal, setShowModal] = useState(false);
 
   const handleModalToggle = () => {
