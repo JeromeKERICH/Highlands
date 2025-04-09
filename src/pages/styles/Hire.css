@@ -6,7 +6,7 @@
   
  
   .hero {
-    background-image: linear-gradient(rgba(43, 68, 45, 0.856), rgba(22, 21, 21, 0.897)), url("/assets/ten1.jpg");
+    background-image: linear-gradient(rgba(43, 68, 45, 0.856), rgba(22, 21, 21, 0.897)), url("/assets/.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -175,27 +175,16 @@
     color: #222;
   }
 
+
+  @media screen and (max-width: 768px) {
+    .feature-item {
+      width: 100%;
+    }
+  
+    .gallery-item img {
+      width: 100%;
+    }
+  }
  
   
-  @media (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 2rem;
-      text-align: start;
-    }
-
-    .hero-content p {
-      text-align: start;
-      font-size: 1rem;
-    }
-
-    .features {
-        padding-left: 4%;
-        padding-right: 4%;
-      }
-      .feature-item {
-        width: 100%;
-      }
-
-     
-  }
   

@@ -30,7 +30,6 @@ const Testimonials = () => {
         {testimonials.slice(currentSlide, currentSlide + 3).map((testimonial, index) => (
           <div className="testimonial-card" key={index}>
             <p>"{testimonial.text}"</p>
-            <h4>- {testimonial.name}</h4>
             <span>{testimonial.role}</span>
           </div>
         ))}

@@ -225,6 +225,77 @@
     text-align: center;
     margin-top: 40px;
   }
+
+  /* About Page - Our Story Section */
+.about-story {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-story h2 {
+  font-size: 2rem;
+  color: #27ae60;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-story p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.about-story p:first-child {
+  margin-top: 0;
+}
+
+.about-story p:last-child {
+  margin-bottom: 0;
+}
+/* About Page - Environmental Sustainability Section */
+.about-sustainability {
+  padding: 50px 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-sustainability h2 {
+  font-size: 2rem;
+  color: #27ae60;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-sustainability p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.about-sustainability p:last-child {
+  margin-bottom: 0;
+}
+
+/* Optional: Add a small image next to the text to create a visual emphasis */
+.about-sustainability img {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
   
   /* Media Queries for Responsiveness */
   @media (max-width: 1024px) {
@@ -294,6 +365,14 @@
     .founder-photo img {
       width: 150px;
       height: 150px;
+    }
+
+    .about-story h2{
+      font-size: 1.5rem;
+    }
+
+    .about-sustainability h2 {
+      font-size: 1.5rem;
     }
 
 

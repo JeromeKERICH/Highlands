@@ -5,9 +5,10 @@ import "./styles/Outdoor.css";
 const OutdoorCatering = () => {
 
   useEffect(() => {
-      // Reset scroll position on every route change
-      window.scrollTo(0, 0);
-    });
+    // Reset scroll position on every route change
+    window.scrollTo(0, 0);
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -18,6 +19,22 @@ const OutdoorCatering = () => {
 
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
+
+  const handleSubmit = () => {
+    // URL-encode the form data
+    const message = `Hello! I would like to book outdoor catering with the following details:
+    Date: ${formData.date}
+    Number of Guests: ${formData.guests}
+    Service Type: ${formData.serviceType}`;
+
+    const encodedMessage = encodeURIComponent(message);
+
+    // Send the message via WhatsApp using the encoded URL
+    const whatsappUrl = `https://wa.me/254702483317=${encodedMessage}`;
+
+    // Open WhatsApp with the encoded message
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <div className="catering-container">
@@ -96,7 +113,7 @@ const OutdoorCatering = () => {
                 </select>
                 <div className="modal-buttons">
                   <button className="btn secondary" onClick={prevStep}>Back</button>
-                  <button className="btn">Submit</button>
+                  <button className="btn" onClick={handleSubmit}>Submit</button>
                 </div>
               </>
             )}

@@ -3,11 +3,11 @@ import { IoCalendar, IoPeople, IoBusiness, IoClose } from "react-icons/io5";
 import "./styles/Hire.css";
 
 const Equipments = () => {
-
   useEffect(() => {
-      // Reset scroll position on every route change
-      window.scrollTo(0, 0);
-    });
+    // Reset scroll position on every route change
+    window.scrollTo(0, 0);
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -19,12 +19,28 @@ const Equipments = () => {
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
 
+  const handleSubmit = () => {
+    // URL-encode the form data
+    const message = `Hello! I would like to book equipment for my event. Here are the details:
+    Date: ${formData.date}
+    Quantity: ${formData.quantity}
+    Category: ${formData.category}`;
+
+    const encodedMessage = encodeURIComponent(message);
+
+    // Send the message via WhatsApp using the encoded URL
+    const whatsappUrl = `https://wa.me/25402483317=${encodedMessage}`;
+
+    // Open WhatsApp with the encoded message
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <div className="tents-utensils-container">
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <h1>Tents & Utensils for Hire</h1>
+          <h1>Utensils for hire</h1>
           <p>Get high-quality tents and utensils for your special events.</p>
           <button className="btn" onClick={() => setShowModal(true)}>Order Now</button>
         </div>
@@ -97,7 +113,7 @@ const Equipments = () => {
                 </select>
                 <div className="modal-buttons">
                   <button className="btn secondary" onClick={prevStep}>Back</button>
-                  <button className="btn">Submit</button>
+                  <button className="btn" onClick={handleSubmit}>Submit</button>
                 </div>
               </>
             )}

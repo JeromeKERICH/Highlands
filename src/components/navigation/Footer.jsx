@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import '../styles/Footer.css';
 
@@ -45,11 +46,10 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/aboutpage">About Us</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/contacts">Contact</Link></li>
           </ul>
         </div>
 
@@ -57,8 +57,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="#" className="social-icon"><FaLinkedin /></a>
-            <a href="#" className="social-icon"><FaFacebook /></a>
+            <a href="https://www.facebook.com/profile.phd?id=100072167240433" className="social-icon"><FaFacebook /></a>
             <a href="#" className="social-icon"><FaTwitter /></a>
             <a href="#" className="social-icon"><FaInstagram /></a>
           </div>

@@ -9,29 +9,7 @@ function AboutPage() {
         window.scrollTo(0, 0);
       });
 
-    const businesses = [
-    {
-        id: 1,
-        name: 'Business Name 1',
-        description: 'Short description of Business 1. This is a summary of what the business does.',
-        image: 'business1.jpg',
-        link: 'https://business1-link.com',
-    },
-    {
-        id: 2,
-        name: 'Business Name 2',
-        description: 'Short description of Business 2. This is a summary of what the business does.',
-        image: 'business2.jpg',
-        link: 'https://business2-link.com',
-    },
-    {
-        id: 3,
-        name: 'Business Name 3',
-        description: 'Short description of Business 3. This is a summary of what the business does.',
-        image: 'business3.jpg',
-        link: 'https://business3-link.com',
-    },
-    ];
+ 
     return (
     <div className="about-page-container">
       {/* Header Section */}
@@ -131,43 +109,35 @@ function AboutPage() {
           </div>
         </div>
       </section>
+{/* Our Story Section */}
+<section className="about-story">
+  <h2>Our Story</h2>
+  <p>
+    Highlands Training Center was founded with a single goal in mind: to provide a versatile and high-quality space where individuals and organizations could come together to grow, collaborate, and push the boundaries of their potential. 
+  </p>
+  <p>
+    Inspired by the serene yet empowering natural surroundings of the Highlands, our founders envisioned a place where creativity, innovation, and productivity could flourish. Over the years, we have grown into a hub for conferences, events, and adventure experiences, catering to the diverse needs of businesses, families, and individuals.
+  </p>
+</section>
 
-      <section className="other-businesses">
-      <h2>Our Other Businesses</h2>
-      <div className="business-list">
-        {businesses.map((business) => (
-          <div key={business.id} className="business-item">
-            <img src={business.image} alt={business.name} />
-            <h3>{business.name}</h3>
-            <p>{business.description}</p>
-            <a href={business.link} target="_blank" rel="noopener noreferrer">
-              Visit Website
-            </a>
-          </div>
-        ))}
-      </div>
-    </section>
+{/* Sustainability Section */}
+<section className="about-sustainability">
+  <h2>Our Commitment to Sustainability</h2>
+  <p>
+    At Highlands Training Center, we believe in making a positive impact on both our community and the environment. Our facilities are designed to be energy-efficient, and we prioritize sustainability in everything we do—from eco-friendly catering options to waste reduction initiatives during events.
+  </p>
+  <p>
+    We are dedicated to minimizing our environmental footprint while providing top-tier services to our clients. We believe that every small step towards sustainability counts.
+  </p>
+</section>
+{/* CTA Section */}
+
+
+   
     
 
 
-      {/* Founder Section */}
-      <section className="founder-section">
-        <h2>Meet Our Founder</h2>
-        <div className="founder-info">
-          <div className="founder-photo">
-            <img src="founder-photo.jpg" alt="Founder" />
-          </div>
-          <div className="founder-bio">
-            <h3>John Doe</h3>
-            <p>
-              John Doe, the founder of Highlands Training Center, has over 20 years of experience in the event
-              management, corporate training, and hospitality industries. His vision is to create a center that fosters
-              learning, creativity, and growth for both individuals and businesses. Under his leadership, the center has
-              grown into a reputable institution known for providing exceptional service and top-tier facilities.
-            </p>
-          </div>
-        </div>
-      </section>
+    
 
     
     </div>

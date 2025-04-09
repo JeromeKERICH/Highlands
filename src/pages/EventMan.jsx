@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { IoCalendar, IoPeople, IoBusiness, IoClose, IoImage } from "react-icons/io5";
+import { IoCalendar, IoPeople, IoBusiness, IoClose } from "react-icons/io5";
 import "./styles/Events.css";
 
 const EventManagement = () => {
-
   useEffect(() => {
-      // Reset scroll position on every route change
-      window.scrollTo(0, 0);
-    });
+    // Reset scroll position on every route change
+    window.scrollTo(0, 0);
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -18,6 +18,22 @@ const EventManagement = () => {
 
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
+
+  const handleSubmit = () => {
+    // URL-encode the form data
+    const message = `Hello! I would like to book an event with the following details:
+    Date: ${formData.date}
+    Number of People: ${formData.people}
+    Event Type: ${formData.category}`;
+
+    const encodedMessage = encodeURIComponent(message);
+
+    // Send the message via WhatsApp using the encoded URL
+    const whatsappUrl = `https://wa.me/254702483317=${encodedMessage}`;
+
+    // Open WhatsApp with the encoded message
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <div className="event-container">
@@ -97,7 +113,7 @@ const EventManagement = () => {
                 </select>
                 <div className="modal-buttons">
                   <button className="btn secondary" onClick={prevStep}>Back</button>
-                  <button className="btn">Submit</button>
+                  <button className="btn" onClick={handleSubmit}>Submit</button>
                 </div>
               </>
             )}

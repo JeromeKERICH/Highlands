@@ -10,6 +10,7 @@ import AdventureGrounds from "../pages/Adventure";
 import Equipments from "../pages/Hire";
 import AboutPage from "../pages/About";
 import ContactSection from "../pages/Contact";
+import Services from "../pages/Services";
 
 
 
@@ -27,6 +28,7 @@ const AppRouter = () => {
         <Route path="/equipments" element={<Equipments/>}/>
         <Route path="/aboutpage" element={<AboutPage/>}/>
         <Route path="/contactsection" element={<ContactSection/>}/>
+        <Route path="/services" element={<Services/>}/>
       </Routes>
       <Footer/>
     </Router>

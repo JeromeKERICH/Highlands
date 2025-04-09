@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
-import { IoCalendar, IoPeople, IoBusiness, IoClose, IoImage } from "react-icons/io5";
+import { IoCalendar, IoPeople, IoBusiness, IoClose } from "react-icons/io5";
 import "./styles/Conference.css";
 
 const ConferenceServices = () => {
-
   useEffect(() => {
-      // Reset scroll position on every route change
-      window.scrollTo(0, 0);
-    });
+    // Reset scroll position on every route change
+    window.scrollTo(0, 0);
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
@@ -18,6 +18,22 @@ const ConferenceServices = () => {
 
   const nextStep = () => setStep(step + 1);
   const prevStep = () => setStep(step - 1);
+
+  const handleSubmit = () => {
+    // URL-encode the form data
+    const message = `Hello! I would like to book a conference with the following details:
+    Date: ${formData.date}
+    Number of People: ${formData.people}
+    Category: ${formData.category}`;
+
+    const encodedMessage = encodeURIComponent(message);
+
+    // Send the message via WhatsApp using the encoded URL
+    const whatsappUrl = `https://wa.me/254702483317=${encodedMessage}`;
+
+    // Open WhatsApp with the encoded message
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <div className="conference-container">
@@ -43,11 +59,6 @@ const ConferenceServices = () => {
             <IoPeople className="icon" />
             <h3>Custom Event Planning</h3>
             <p>Flexible seating, on-site catering, and dedicated event managers.</p>
-          </div>
-          <div className="feature-item">
-            <IoCalendar className="icon" />
-            <h3>Serene Location</h3>
-            <p>Escape distractions and host productive, inspiring gatherings in a peaceful environment.</p>
           </div>
           <div className="feature-item">
             <IoCalendar className="icon" />
@@ -101,7 +112,7 @@ const ConferenceServices = () => {
                 </select>
                 <div className="modal-buttons">
                   <button className="btn secondary" onClick={prevStep}>Back</button>
-                  <button className="btn">Submit</button>
+                  <button className="btn" onClick={handleSubmit}>Submit</button>
                 </div>
               </>
             )}
