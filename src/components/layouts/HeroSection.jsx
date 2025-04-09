@@ -43,9 +43,7 @@ const HeroSection = () => {
           <div className="carousel">
             <h2>Your Perfect Event, Our Passion</h2>
             <p>Transforming Moments into Memories. A celebration, an adventure, or a simple retreat—it all begins here.</p>
-            <button className="hero-explore" onClick={() => window.location.href = "tel:+254702483317"}>
-              Call Us Today
-            </button>
+            
           </div>
         </div>
 
